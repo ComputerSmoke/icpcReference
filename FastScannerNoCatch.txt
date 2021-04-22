@@ -1,0 +1,24 @@
+static class FastScanner {
+		BufferedReader br;
+		StringTokenizer st;
+		public FastScanner() {
+			br = new BufferedReader(new InputStreamReader(System.in));
+		}
+		String nextLine() throws IOException {
+			String returnString = "";
+			returnString = br.readLine();
+			return returnString;
+		}
+		String next() throws IOException {
+			while(st == null || !st.hasMoreElements()) st = new StringTokenizer(br.readLine());
+			return st.nextToken();
+		}
+		int nextInt() throws NumberFormatException, IOException {
+			return Integer.parseInt(next());
+		}
+		long nextLong() throws NumberFormatException, IOException {
+			return Long.parseLong(next());
+		}
+		double nextDouble() throws NumberFormatException, IOException {
+			return Double.parseDouble(next());
+		}
