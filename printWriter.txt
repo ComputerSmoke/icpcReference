@@ -1,7 +1,0 @@
-BufferedWriter out = new BufferedWriter(new OutputStreamWriter(System.out, "ASCII"), 512);
-
-
-
-
-out.write(<output>);
-out.flush();
